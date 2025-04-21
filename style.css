@@ -130,6 +130,7 @@ section h2 {
 
 #certifications ul {
   list-style-type: none;
+  padding: 0;
 }
 
 #certifications li {
@@ -141,7 +142,7 @@ section h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 200px; /* Ajuste la hauteur en fonction de ton contenu */
+  height: auto; 
   transition: transform 0.2s ease;
 }
 
@@ -150,25 +151,22 @@ section h2 {
 }
 
 #certifications li a {
-  display: inline-block;
+  display: block; 
   margin-top: 10px;
   text-decoration: none;
   background-color: #302b63;
   color: white;
-  padding: 12px 20px; 
-  border-radius: 8px; 
-  font-weight: 600; 
-  font-size: 1rem; 
-  text-align: center; 
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
   transition: background 0.3s ease;
 }
 
 #certifications li a:hover {
-  background-color: #1f1c47; 
+  background-color: #1f1c47;
 }
-
-
-
 
 #certifications li strong {
   font-size: 1.2rem;
@@ -179,6 +177,12 @@ section h2 {
 
 #certifications li p {
   flex-grow: 1;
+  margin-bottom: 10px; 
+}
+
+/* Espacement entre les éléments */
+#certifications li + li {
+  margin-top: 20px; 
 }
 
 
