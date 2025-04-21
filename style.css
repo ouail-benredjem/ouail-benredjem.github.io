@@ -153,7 +153,7 @@ section h2 {
   display: inline-block;
   margin-top: 10px;
   text-decoration: none;
-  background-color: #00d9ff;
+  background-color: #302b63;
   color: white;
   padding: 12px 20px; 
   border-radius: 8px; 
@@ -208,7 +208,7 @@ section h2 {
 }
 
 #contact a {
-  background-color: #302b63; /* Couleur de fond similaire au bouton "Télécharger mon CV" */
+  background-color: #302b63; 
   color: white;
   padding: 12px 20px;
   border-radius: 5px;
