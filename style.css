@@ -138,20 +138,16 @@ section h2 {
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Assure-toi qu'il y a un espacement entre chaque élément */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: auto; 
+  height: auto; /* Ajuste la hauteur pour que le contenu s'adapte */
   transition: transform 0.2s ease;
 }
 
-#certifications li:hover {
-  transform: scale(1.02);
-}
-
 #certifications li a {
-  display: block; 
+  display: block; /* Change à block pour occuper toute la largeur disponible */
   margin-top: 10px;
   text-decoration: none;
   background-color: #302b63;
@@ -168,6 +164,10 @@ section h2 {
   background-color: #1f1c47;
 }
 
+#certifications li p {
+  margin-bottom: 15px; 
+}
+
 #certifications li strong {
   font-size: 1.2rem;
   color: #302b63;
@@ -175,10 +175,15 @@ section h2 {
   display: inline-block;
 }
 
-#certifications li p {
-  flex-grow: 1;
-  margin-bottom: 10px; 
+#certifications li + li {
+  margin-top: 20px; 
 }
+
+
+#certifications li:nth-last-child(-n+2) {
+  margin-bottom: 20px;
+}
+
 
 /* Espacement entre les éléments */
 #certifications li + li {
