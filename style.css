@@ -112,6 +112,7 @@ section h2 {
   background-color: #009ec3;
 }
 
+
 /* Certifications */
 #certifications {
   max-width: 1000px;
@@ -137,6 +138,10 @@ section h2 {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
   padding: 20px;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px; /* Ajuste la hauteur en fonction de ton contenu */
   transition: transform 0.2s ease;
 }
 
@@ -166,6 +171,11 @@ section h2 {
   margin-bottom: 10px;
   display: inline-block;
 }
+
+#certifications li p {
+  flex-grow: 1;
+}
+
 
 
 /* CV */
