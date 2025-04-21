@@ -155,11 +155,18 @@ section h2 {
   text-decoration: none;
   background-color: #00d9ff;
   color: white;
-  padding: 10px 15px;
-  border-radius: 5px;
-  font-weight: bold;
+  padding: 12px 20px; 
+  border-radius: 8px; 
+  font-weight: 600; 
+  font-size: 1rem; 
+  text-align: center; 
   transition: background 0.3s ease;
 }
+
+#certifications li a:hover {
+  background-color: #009ec3; 
+}
+
 
 #certifications li a:hover {
   background-color: #009ec3;
