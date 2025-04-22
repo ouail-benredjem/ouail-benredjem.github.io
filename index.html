@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ouail-benredjem Portfolio Data</title>
   <link rel="stylesheet" href="style.css" />
+  
 </head>
 <body>
 
@@ -15,7 +16,7 @@
     <nav>
       <a href="#about">À propos</a>
       <a href="#projects">Projets</a>
-       <a href="#certifications">Certifications</a>
+      <a href="#certifications">Certifications</a>
       <a href="#cv">CV</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -23,120 +24,80 @@
 
   <section id="about">
     <h2>À propos</h2>
-    <p> Bonjour, je suis Benredjem Houdeifa Ouail actuellemnt étudiant en Master Ingénierie des Données à l’EPSI, je combine expertise en analyse et ingénierie des données,
-       avec une forte volonté d'apprendre. Curieux et rigoureux, je cherche à rejoindre une équipe pour développer
-        des solutions basées sur les données et soutenir la prise de décision.</p>
-        <h1> Rythme d’alternance : une semaine à l’école deux à l’entreprise. </h1>
+    <p> Bonjour, je suis Benredjem Houdeifa Ouail actuellement étudiant en Master Ingénierie des Données à l’EPSI...</p>
+    <h1> Rythme d’alternance : une semaine à l’école deux à l’entreprise. </h1>
   </section>
 
   <section id="projects">
     <h2>Mes Projets</h2>
 
     <div class="project">
-      <h3>Dashboard Qualité de l'air pour laboratoir Good Air (Power BI)</h3>
-      <img src= "1 (1).png "alt=" Dashboard Power BI Qualité de lair " />
-      <p> “Ce tableau de bord offre une vue claire et interactive de l’état de la qualité de l’air. 
-        Il peut être utilisé par les collectivités pour déclencher des actions en cas de dépassement de seuils critiques.”
-        </p>
+      <h3>Dashboard Qualité de l'air</h3>
+      <img src="1 (1).png" alt="Dashboard Power BI Qualité de l'air" onclick="openLightbox(this.src)" />
+      <p>Ce tableau de bord offre une vue claire et interactive de l’état de la qualité de l’air...</p>
       <a href="visualisation.pbix" target="_blank">Voir le rapport</a>
     </div>
 
     <div class="project">
       <h3>Pipeline Météo avec Airflow</h3>
-      <img src="1 (2).png " alt="Pipeline météo " />
-      <p> Ce tableau de bord permet de suivre les conditions météorologiques et la qualité de l’air dans plusieurs villes sur plusieurs jours,
-        pour faciliter l’analyse comparative et l’aide à la décision.</p>
+      <img src="1 (2).png" alt="Pipeline météo" onclick="openLightbox(this.src)" />
+      <p>Ce tableau de bord permet de suivre les conditions météorologiques...</p>
     </div>
-    
-     <div class="project">
-      <h3>Tableau de bord : Analyse du Diabète </h3>
-      <img src="3 (3).png " alt="Analyse du Diabète " />
-      <p> Ce tableau de bord interactif fournit une vue d'ensemble sur les facteurs liés au diabète à partir des données de 768 patients.</p>
-    </div>
-
-       <div class="project">
-  <h3>Tableau de bord Power Bi: Analyse quantitative des ventes 2023-2024</h3>
-
-  <div class="project-images">
-    <img src="4 (4).png" alt="Schéma du modèle de données Power BI" />
-    <img src="5 (5).png" alt="Dashboard Analyse quantitative des ventes 2023-2024" />
-  </div>
-
-  <p>
-    Ce rapport Power BI a été conçu dans le cadre d’un exercice de formation pour analyser les ventes réalisées sur les années 2023 et 2024.
-    L’objectif est de fournir une vue d’ensemble claire et dynamique des performances commerciales, en mettant l’accent sur les fournisseurs,
-    les pays et l’évolution mensuelle des ventes.
-  </p>
-
-  <p><strong>Données utilisées</strong><br>
-    Fichier Excel contenant des données de ventes, clients, produits, fournisseurs et un calendrier.<br>
-    Structure en étoile avec une table de faits (<i>ventes 2023-2024</i>) et plusieurs dimensions (<i>clients</i>, <i>produits</i>, <i>fournisseurs</i>, <i>calendrier</i>).
-  </p>
-</div>
 
     <div class="project">
-  <h3>Tableau de bord Power Bi : Analyse Visuelle des Données Netflix (en anglais)</h3>
-  <img src="6 (6).jpg" alt="Analyse Visuelle Netflix Power BI" />
-  <p>
-    Ce tableau de bord interactif a été réalisé en anglais dans le cadre d’un projet d’analyse exploratoire des données de la plateforme Netflix.
-    Il met en lumière des tendances clés concernant la diversité de l'offre en termes de langues, de catégories d'âge, de durée des contenus,
-    de répartition géographique et de l'évolution des sorties au fil du temps.
-  </p>
-  <p>
-    L'objectif principal était de fournir une visualisation claire et synthétique permettant à un public anglophone de comprendre
-    la stratégie de diffusion de Netflix selon les régions et les périodes.
-  </p>
-</div>
+      <h3>Analyse du Diabète</h3>
+      <img src="3 (3).png" alt="Analyse du Diabète" onclick="openLightbox(this.src)" />
+      <p>Ce tableau de bord interactif fournit une vue d'ensemble sur les facteurs liés au diabète...</p>
+    </div>
 
-<div class="project">
-  <h3>Tableau de Bord des Ventes (Outil Tableau)</h3>
-  <img src="7 (7).png" alt="Analyse des Ventes Tableau" />
-  <p>
-    Un aperçu visuel des données de ventes, créé à l'aide de Tableau dans le cadre d'un module de ma formation. Ce projet démontre
-    la capacité à analyser les performances par catégorie, segment, zone géographique et date en utilisant cet outil de visualisation.
-  </p>
-  <p>
-    L'objectif principal était de fournir une visualisation claire et interactive permettant d'analyser les tendances des ventes
-    et de prendre des décisions éclairées sur la base de ces données.
-  </p>
-</div>
+    <div class="project">
+      <h3>Analyse des ventes 2023-2024</h3>
+      <div class="project-images">
+        <img src="4 (4).png" alt="Modèle de données Power BI" onclick="openLightbox(this.src)" />
+        <img src="5 (5).png" alt="Dashboard ventes" onclick="openLightbox(this.src)" />
+      </div>
+      <p>Ce rapport Power BI a été conçu pour analyser les ventes sur 2023 et 2024...</p>
+    </div>
 
+    <div class="project">
+      <h3>Analyse Netflix (en anglais)</h3>
+      <img src="6 (6).jpg" alt="Analyse Visuelle Netflix" onclick="openLightbox(this.src)" />
+      <p>Ce tableau de bord interactif met en lumière des tendances sur les contenus Netflix...</p>
+    </div>
 
-    <!-- Tu peux ajouter d'autres projets ici -->
+    <div class="project">
+      <h3>Dashboard Tableau</h3>
+      <img src="7 (7).png" alt="Analyse des Ventes Tableau" onclick="openLightbox(this.src)" />
+      <p>Un aperçu visuel des données de ventes avec Tableau dans le cadre de ma formation...</p>
+    </div>
   </section>
 
-<section id="certifications">
-  <h2>Certifications</h2>
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>
+        <strong>Power BI - LinkedIn Learning</strong><br>
+        Obtenue en Janvier 2025.
+        <a href="Certificat Power BI.pdf" target="_blank">Voir la certification</a>
+      </li>
+      <li>
+        <strong>Tableau - LinkedIn Learning</strong><br>
+        Obtenue en Décembre 2024.
+        <a href="Certificat Tableau.pdf" target="_blank">Voir la certification</a>
+      </li>
+      <li>
+        <strong>Piloter l'informatique décisionnelle - Pro Alterna</strong><br>
+        Obtenue en Décembre 2024.
+        <a href="Certificat(2).pdf" target="_blank">Voir la certification</a>
+      </li>
+      <li>
+        <strong>Data Management - Pro Alterna</strong><br>
+        Obtenue en Novembre 2024.
+        <a href="Certificat.pdf" target="_blank">Voir la certification</a>
+      </li>
+    </ul>
+  </section>
 
-  <ul>
-    <li>
-      <strong> Certification Power BI - LinkedIn learning</strong><br>
-      Obtenue en [Janvier, 2025].Cette certification couvre les compétences avancées en analyse de données avec l'outil de visualisation Power BI.
-      <a href= "Certificat Power BI.pdf" target="_blank">Voir la certification</a>
-    </li>
-    <li>
-      <strong>Certification Tableau - LinkedIn learning</strong><br>
-      Obtenue en [Décembre, 2024]. Cette certification valide la maîtrise de l'utilisation de Tableau pour créer des visualisations interactives.
-      <a href="Certificat Tableau.pdf" target="_blank">Voir la certification</a>
-    </li>
-    <li>
-      <strong> Certification  Piloter l'informatique décisionnelle d'un SI - Pro Alterna </strong><br>
-      Obtenue en[Décembre, 2024].  Collecter les besoins Définir une architecture BI et une stratégie big data Proposer des modèles statistiques et de data science Organiser les
-sources de données en résultats exploitables Définir les données de référence pour créer un référentiel Créer un entrepôt unique à partir du référentiel Assurer la qualité des
-données Appliquer les procédures de sécurité conformément au RGPD.
-      <a href="Certificat(2).pdf" target="_blank">Voir la certification</a>
-    </li>
-    <li>
-      <strong>Certification Data Management - Pro Alterna</strong><br>
-      Obtenue en [Novembre, 2024]. Collecter les besoins Définir une architecture BI et une stratégie big data Proposer des modèles statistiques et de data science Organiser les
-sources de données en résultats exploitables Définir les données de référence pour créer un référentiel Créer un entrepôt unique à partir du référentiel Assurer la qualité des
-données Appliquer les procédures de sécurité conformément au RGPD.
-      <a href="Certificat.pdf " target="_blank">Voir la certification</a>
-    </li>
-  </ul>
-</section>
-
-  
   <section id="cv">
     <h2>CV</h2>
     <a href="CV benredjem ouail.pdf" target="_blank">Télécharger mon CV</a>
@@ -145,13 +106,32 @@ données Appliquer les procédures de sécurité conformément au RGPD.
   <section id="contact">
     <h2>Contact</h2>
     <p>Email : benredjemouail@gmail.com</p>
-    <p><a href= https://www.linkedin.com/in/ouail-houdeifa-benredjem-336277206 target="_blank">LinkedIn</a></p>
-    <p><a href=https://github.com/ouail-benredjem target="_blank">GitHub</a></p>
+    <p><a href="https://www.linkedin.com/in/ouail-houdeifa-benredjem-336277206" target="_blank">LinkedIn</a></p>
+    <p><a href="https://github.com/ouail-benredjem" target="_blank">GitHub</a></p>
   </section>
 
   <footer>
     <p>© 2025 OUAIL – Portfolio</p>
   </footer>
+
+  <!-- Lightbox HTML -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Image agrandie">
+  </div>
+
+  <!-- Script JS -->
+  <script>
+    function openLightbox(src) {
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      lightbox.style.display = "flex";
+      lightboxImg.src = src;
+    }
+
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+  </script>
 
 </body>
 </html>
