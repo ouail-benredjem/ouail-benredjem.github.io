@@ -228,3 +228,32 @@ section h2 {
 #contact a:hover {
   background-color: #1f1c47; /* Couleur plus sombre au survol */
 }
+
+
+    .lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.8);
+      z-index: 9999;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .lightbox img:hover {
+      transform: scale(1.02);
+    }
+  
+
