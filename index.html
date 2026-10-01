@@ -1,305 +1,388 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ouail-benredjem Portfolio Data</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Ouail Houdeifa Benredjem — Data Analyst / Data Engineer / BI</title>
+<meta name="description" content="Data Analyst & Data Engineer diplômé d'un Master 2 BI & Analytics. Power BI, SQL, Python, Airflow, Snowflake. En recherche de CDI." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header class="hero">
-    <img src="ouail.jpeg" alt="Photo de Ouail" class="profile-pic" />
-    <h1>Bonjour, je suis Houdeifa Ouail Benredjem</h1>
-    <p>Data Analyst & Data Engineer</p>
-    <nav>
-      <a href="#about">À propos</a>
-      <a href="#projects">Projets</a>
-       <a href="#certifications">Certifications</a>
-      <a href="#cv">CV</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <section id="about">
-    <h2>À propos</h2>
-<p>
-  Bonjour, je suis Benredjem Houdeifa Ouail, diplômé d’un Master 2 Informatique – Business Intelligence &amp; Analytics à l’Université Lumière Lyon 2. Je combine expertise en analyse et ingénierie des données, avec une approche orientée métier et décision.
-</p>
-
-<p>
-  À travers trois expériences dans des secteurs différents — énergie, pharmaceutique et automobile — j’ai recueilli, analysé et restitué des données via Power BI et Tableau, mis en place des indicateurs de performance et collaboré avec les équipes métier pour garantir la qualité et la fiabilité des données.
-</p>
-
-<p>
-  <strong>Je recherche aujourd’hui un CDI en tant que Data Analyst</strong>, afin de mettre à profit ma double compétence technique et relationnelle pour transformer les données en informations utiles et contribuer concrètement à la prise de décision.
-</p>
-
-  </section>
-
-  <section id="projects">
-    <h2>Mes Projets</h2>
-
-  
-    <div class="project">
-      <h3>Modélisation en Étoile - Pilotage des Formations (Power BI)</h3>
-      <img src= "enedis1.png "alt=" Modélisation en Étoile - Rapport ENEDIS " />
-      <p> Cette vue présente l'architecture du modèle de données relationnel du projet.
-        Elle met en évidence la structuration des informations autour de tables clés et de leurs relations, incluant le Catalogue, les Sessions UOF,
-        les Besoins, le Calendrier, les Typologies des stages et la Table Presentielle.
-        Ce schéma robuste, conçu pour l'Agence APOI de Lyon, constitue le socle technique indispensable pour assurer la précision des calculs DAX 
-        complexes et garantir le fonctionnement des filtres dynamiques à travers toutes les pages du tableau de bord."
-        </p>
+<nav class="topnav">
+  <div class="navrow">
+    <span class="name">Ouail Houdeifa Benredjem</span>
+    <button class="navtoggle" id="navToggle" aria-label="Menu">menu</button>
+    <div class="navlinks" id="navLinks">
+      <a href="#about">profil</a>
+      <a href="#skills">compétences</a>
+      <a href="#experience">expérience</a>
+      <a href="#projects">projets</a>
+      <a href="#certifications">certifications</a>
+      <a href="#contact">contact</a>
     </div>
-
-     <div class="project">
-      <h3>Le Glossaire APOI</h3>
-      <img src= "enedis4.png "alt=" Le Glossaire APOI - Rapport ENEDIS " />
-      <p> La première page du rapport, intitulée Glossaire APOI, remplit un rôle fondamental de gouvernance et de conduite du changement
-        . Dans le cadre d'un projet décisionnel transverse destiné à être repris par l'équipe Performance à Paris,
-        il est indispensable de standardiser les définitions. L'objectif de cette page est d'unifier le langage fonctionnel entre le management,
-        l'équipe de programmation et l'équipe de gestion. Elle documente de manière transparente les règles algorithmiques de calcul afin d'éviter
-        toute ambiguïté ou divergence d'interprétation lors des points de gestion hebdomadaires.
-        </p>
-    </div>
-
-     <div class="project">
-      <h3>Pilotage de l'Activité et Taux de Couverture (Power BI)</h3>
-      <img src= "enedis2.png "alt="  - Pilotage de l'Activité Page global Rapport ENEDIS " />
-      <p> Ce tableau de bord global permet un suivi précis de l'activité de formation, en comparant les performances réelles aux objectifs fixés.
-        Il intègre des KPI clés tels que le taux de remplissage, le taux de clôture, ainsi que le taux de couverture des besoins actuels et à venir.
-        Une analyse détaillée des sessions non publiées par délai, couplée au suivi des heures stagiaires réalisées face à l'objectif,
-        offre une vue exhaustive pour la prise de décision.
-        </p>
-    </div>
-    
-    <div class="project">
-      <h3> Matrice de Pilotage</h3>
-      <img src= "enedis5.png "alt="  Matrice de Pilotage - Rapport ENEDIS " />
-      <p>L'objectif de cette page est de transposer l'ancienne approche Excel directement dans l'environnement Power BI pour l'équipe Gestion.
-        Elle fournit une vue opérationnelle et granulaire (ligne par ligne) de toutes les sessions actives. 
-        Cet écran permet aux gestionnaires de suivre l'évolution quotidienne des indicateurs de terrain (statuts, alertes,
-        jalons logistiques) et de centraliser les arbitrages nécessaires avant les points d'équipe,
-        éliminant définitivement le besoin de manipuler des fichiers plats.
-        </p>
-    </div>
-
-      <div class="project">
-      <h3> Taux de couverture par filière (Réponse aux besoins)</h3>
-      <img src= "enedis6.png "alt="  Taux de couverture par filière  - Rapport ENEDIS " />
-      <p> L'objectif de cette page est d'identifier précisément les filières sur lesquelles l'unité est en difficulté de réponse aux besoins.
-        Grâce à un double graphique comparatif et à un bouton d'interactivité dédié ("Tous les états"),
-        elle permet au management et à l'équipe Programmation de confronter instantanément la couverture théorique 
-        (incluant toutes les sessions programmées) à la couverture réelle (excluant les sessions annulées). 
-        Cet outil d'analyse offre une visibilité directe sur les déficits de couverture afin de cibler et 
-        de piloter efficacement les actions	correctives	associées.
-        </p>
-    </div>
-
-     <div class="project">
-      <h3> Taux de couverture par action (Analyse granulaire réalisé VS cible)</h3>
-      <img src= "enedis7.png "alt="  Taux de couverture par action - Rapport ENEDIS " />
-      <p> L'objectif de cette page est de descendre à un niveau de granularité microscopique en pilotant la réponse aux besoins 
-        directement par action de formation (code de chaque module). Grâce aux fonctionnalités de bascule entre la vue "Plafonnée" 
-        (bloquée à 100 % pour évaluer la stricte atteinte de la cible) et la vue "Déplafonnée" (mettant en lumière la sur-programmation), 
-        combinées au bouton de suivi des statuts ("Tous états par actions"), elle permet à l'équipe Programmation d'ajuster l'offre au code action près. 
-        Cet écran d'arbitrage fin sert à stopper les ouvertures de sessions excédentaires et à réallouer immédiatement les ressources
-        sur les modules en déficit critique.
-        </p>
-    </div>
-
-     <div class="project">
-      <h3> Clôture des sessions </h3>
-      <img src= "enedis8.png "alt="  Clôture des sessions - Rapport ENEDIS " />
-      <p> L'objectif de cette page est de piloter et d'accélérer la clôture administrative et financière des sessions de formation arrivées à leur terme. 
-        Spécifiquement conçu pour l'équipe Gestion, cet écran permet de repérer immédiatement les retards de traitement par zone géographique 
-        (campus et antennes) et de hiérarchiser les actions selon l'ancienneté des dossiers (analyse des délais après la date de fin de session).
-        C'est un outil opérationnel direct visant à résorber le stock de sessions en souffrance pour converger vers la cible des 100 % de clôture 
-        exigée par le management.
-        </p>
-    </div>
-
-
-     
-    <div class="project">
-      <h3>Suivi du Remplissage des Sessions de Formation (Power BI))</h3>
-      <img src= "enedis3.png "alt="  - PRemplissage des Sessions de Formation Rapport ENEDIS " />
-      <p> Cette page est dédiée à l'analyse granulaire du remplissage des sessions de formation. 
-        Elle permet de visualiser la performance par filière et d'identifier rapidement les sessions non remplies
-        en fonction de leur délai avant le début du présentiel (de 0 à plus de 16 semaines).
-        Les filtres dynamiques (Filière, Année, Observateur, Typologies) permettent une exploration approfondie des 646 sessions gérées,
-        facilitant les actions correctives ciblées de l'équipe.
-        </p>
-    </div>
-
-    <div class="project">
-      <h3> Taux de remplissage par action</h3>
-      <img src= "enedis9.png "alt="  Taux de remplissage par action - Rapport ENEDIS " />
-      <p> L'objectif de cette page est d'analyser l'efficacité de l'occupation des places à la maille la plus fine du catalogue,
-        c'est-à-dire directement par code d'action de formation. Grâce aux filtres temporels dédiés (passé, global, à venir), 
-        cet écran permet d'identifier avec précision les modules spécifiques qui se situent chroniquement en deçà des seuils 
-        de rentabilité ou qui affichent une saturation. C'est un outil de diagnostic micro-opérationnel indispensable pour décider
-        du maintien d'une thématique, planifier des regroupements de sessions ou ajuster l'offre de cours de l'agence.
-        </p>
-    </div>
-
-      <div class="project">
-      <h3> Analyse des heures stagiaires (Réalisé VS Théorique) </h3>
-      <img src= "enedis10.png "alt="  Analyse des heures stagiaires  - Rapport ENEDIS " />
-      <p> L'objectif de cette page est de piloter la production globale de l'unité en termes de volume d'heures de formation dispensées.
-        À travers un suivi cumulatif trimestriel (de T1 à T4), elle permet au management et aux responsables de la performance de confronter
-        l'activité réelle face au potentiel théorique et aux trajectoires cibles. Cet outil d'analyse est indispensable pour mesurer l'avancement
-        des engagements annuels, anticiper les écarts de production en cours d'année et ajuster la planification globale du service.
-        </p>
-    </div>
-
-    <div class="project">
-      <h3> Focus Sessions annulées et reportées </h3>
-      <img src= "enedis11.png "alt="  Focus Sessions annulées et reportées  - Rapport ENEDIS " />
-      <p>L'objectif de cette page est d'analyser la déperdition d'activité afin d'identifier les causes profondes des perturbations du plan de formation. 
-        En catégorisant les sessions par motif de dysfonctionnement (indisponibilité des formateurs, manque de participants, modifications de l'offre)
-        et en suivant leur évolution mensuelle cumulative, cet écran permet au management et à l'équipe Programmation de mener des actions préventives
-        ciblées pour sécuriser les capacités de formation et réduire au maximum le volume de sessions annulées.
-        </p>
-    </div>
-
-     <div class="project">
-      <h3> Analyse croisée et contrôle de cohérence </h3>
-      <img src= "enedis12.png "alt="  Analyse croisée et contrôle de cohérence  - Rapport ENEDIS " />
-      <p>L'objectif de cette page est double : cartographier la vulnérabilité des métiers face aux annulations et assurer la qualité des données du modèle.
-        D'une part, la matrice croisée permet d'identifier quelles filières subissent le plus de ruptures et pour quels motifs précis. D'autre part, 
-        les tables de réconciliation agissent comme un outil de contrôle interne pour détecter les écarts de synchronisation entre les systèmes MyHR et FSOS. 
-        Cet écran est indispensable pour mener les corrections de saisie nécessaires et garantir l'exactitude des indicateurs.
-        </p>
-    </div>
-    
-    
-    <div class="project">
-      <h3>Dashboard Qualité de l'air pour laboratoir Good Air (Power BI)</h3>
-      <img src= "1 (1).png "alt=" Dashboard Power BI Qualité de lair " />
-      <p> “Ce tableau de bord offre une vue claire et interactive de l’état de la qualité de l’air. 
-        Il peut être utilisé par les collectivités pour déclencher des actions en cas de dépassement de seuils critiques.”
-        </p>
-      <a href="visualisation.pbix" target="_blank">Voir le rapport</a>
-    </div>
-
-    <div class="project">
-      <h3>Pipeline Météo avec Airflow</h3>
-      <img src="1 (2).png " alt="Pipeline météo " />
-      <p> Ce tableau de bord permet de suivre les conditions météorologiques et la qualité de l’air dans plusieurs villes sur plusieurs jours,
-        pour faciliter l’analyse comparative et l’aide à la décision.</p>
-    </div>
-    
-     <div class="project">
-      <h3>Tableau de bord : Analyse du Diabète </h3>
-      <img src="3 (3).png " alt="Analyse du Diabète " />
-      <p> Ce tableau de bord interactif fournit une vue d'ensemble sur les facteurs liés au diabète à partir des données de 768 patients.</p>
-    </div>
-
-       <div class="project">
-  <h3>Tableau de bord Power Bi: Analyse quantitative des ventes 2023-2024</h3>
-
-  <div class="project-images">
-    <img src="4 (4).png" alt="Schéma du modèle de données Power BI" />
-    <img src="5 (5).png" alt="Dashboard Analyse quantitative des ventes 2023-2024" />
   </div>
+</nav>
 
-  <p>
-    Ce rapport Power BI a été conçu dans le cadre d’un exercice de formation pour analyser les ventes réalisées sur les années 2023 et 2024.
-    L’objectif est de fournir une vue d’ensemble claire et dynamique des performances commerciales, en mettant l’accent sur les fournisseurs,
-    les pays et l’évolution mensuelle des ventes.
-  </p>
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="reveal in">
+      <span class="kicker">data_analyst.profile</span>
+      <h1>Ouail Houdeifa Benredjem</h1>
+      <div class="role">Data Analyst · Data Engineer · BI</div>
+      <p class="lede">Diplômé d'un Master 2 Informatique – Business Intelligence &amp; Analytics (Université Lumière Lyon 2). Je comprends le problème métier avant de sortir le premier graphique.</p>
+      <span class="seeking">● je recherche aujourd'hui un CDI</span>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#projects">voir mes projets</a>
+        <a class="btn btn-ghost" href="#contact">me contacter</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/ouail-houdeifa-benredjem/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn btn-ghost" href="https://github.com/ouail-benredjem" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+    <div class="portrait-frame reveal in">
+      <img src="ouail.jpeg" alt="Photo de Ouail Houdeifa Benredjem" />
+    </div>
+  </div>
+</header>
 
-  <p><strong>Données utilisées</strong><br>
-    Fichier Excel contenant des données de ventes, clients, produits, fournisseurs et un calendrier.<br>
-    Structure en étoile avec une table de faits (<i>ventes 2023-2024</i>) et plusieurs dimensions (<i>clients</i>, <i>produits</i>, <i>fournisseurs</i>, <i>calendrier</i>).
-  </p>
+<div class="techstrip">
+  <div class="wrap">
+    <span class="pill">Power BI</span><span class="pill">DAX</span><span class="pill">SQL</span>
+    <span class="pill">Python</span><span class="pill">PostgreSQL</span><span class="pill">SQL Server</span>
+    <span class="pill">Airflow</span><span class="pill">PySpark</span><span class="pill">Docker</span>
+    <span class="pill">Snowflake</span><span class="pill">BigQuery</span><span class="pill">Azure</span>
+    <span class="pill">Tableau</span><span class="pill">Git</span>
+  </div>
 </div>
 
-    <div class="project">
-  <h3>Tableau de bord Power Bi : Analyse Visuelle des Données Netflix (en anglais)</h3>
-  <img src="6 (6).jpg" alt="Analyse Visuelle Netflix Power BI" />
-  <p>
-    Ce tableau de bord interactif a été réalisé en anglais dans le cadre d’un projet d’analyse exploratoire des données de la plateforme Netflix.
-    Il met en lumière des tendances clés concernant la diversité de l'offre en termes de langues, de catégories d'âge, de durée des contenus,
-    de répartition géographique et de l'évolution des sorties au fil du temps.
-  </p>
-  <p>
-    L'objectif principal était de fournir une visualisation claire et synthétique permettant à un public anglophone de comprendre
-    la stratégie de diffusion de Netflix selon les régions et les périodes.
-  </p>
-</div>
-
-<div class="project">
-  <h3>Tableau de Bord des Ventes (Outil Tableau)</h3>
-  <img src="7 (7).png" alt="Analyse des Ventes Tableau" />
-  <p>
-    Un aperçu visuel des données de ventes, créé à l'aide de Tableau dans le cadre d'un module de ma formation. Ce projet démontre
-    la capacité à analyser les performances par catégorie, segment, zone géographique et date en utilisant cet outil de visualisation.
-  </p>
-  <p>
-    L'objectif principal était de fournir une visualisation claire et interactive permettant d'analyser les tendances des ventes
-    et de prendre des décisions éclairées sur la base de ces données.
-  </p>
-</div>
-
-
-    <!-- Tu peux ajouter d'autres projets ici -->
-  </section>
-
-<section id="certifications">
-  <h2>Certifications</h2>
-
-  <ul>
-     <li>
-      <strong> Certification Power BI Avancé  - LinkedIn learning</strong><br>
-      Obtenue en [Avril, 2025].Cette certification valide mes compétences de base dans Microsoft Power BI. La formation a porté sur la manipulation, 
-       l'analyse et la visualisation de données, compétences clés pour la création de rapports et de tableaux de bord..
-      <a href= "Certificat Power BI 2.pdf" target="_blank">Voir la certification</a>
-    </li>
-    <li>
-      <strong> Certification  Power BI - LinkedIn learning</strong><br>
-      Obtenue en [Janvier, 2025].Cette certification couvre les compétences avancées en analyse de données avec l'outil de visualisation Power BI.
-      <a href= "Certificat Power BI.pdf" target="_blank">Voir la certification</a>
-    </li>
-    <li>
-      <strong>Certification Tableau - LinkedIn learning</strong><br>
-      Obtenue en [Décembre, 2024]. Cette certification valide la maîtrise de l'utilisation de Tableau pour créer des visualisations interactives.
-      <a href="Certificat Tableau.pdf" target="_blank">Voir la certification</a>
-    </li>
-    <li>
-      <strong> Certification  Piloter l'informatique décisionnelle d'un SI - Pro Alterna </strong><br>
-      Obtenue en[Décembre, 2024].  Collecter les besoins Définir une architecture BI et une stratégie big data Proposer des modèles statistiques et de data science Organiser les
-sources de données en résultats exploitables Définir les données de référence pour créer un référentiel Créer un entrepôt unique à partir du référentiel Assurer la qualité des
-données Appliquer les procédures de sécurité conformément au RGPD.
-      <a href="Certificat(2).pdf" target="_blank">Voir la certification</a>
-    </li>
-    <li>
-      <strong>Certification Data Management - Pro Alterna</strong><br>
-      Obtenue en [Novembre, 2024]. Collecter les besoins Définir une architecture BI et une stratégie big data Proposer des modèles statistiques et de data science Organiser les
-sources de données en résultats exploitables Définir les données de référence pour créer un référentiel Créer un entrepôt unique à partir du référentiel Assurer la qualité des
-données Appliquer les procédures de sécurité conformément au RGPD.
-      <a href="Certificat.pdf " target="_blank">Voir la certification</a>
-    </li>
-  </ul>
+<section id="about">
+  <div class="wrap reveal">
+    <div class="sec-head"><h2>Profil</h2><span class="field">role: data_analyst</span></div>
+    <div class="about-grid">
+      <p>Bonjour, je suis Benredjem Houdeifa Ouail, diplômé d'un Master 2 Informatique – Business Intelligence &amp; Analytics à l'Université Lumière Lyon 2. Je combine expertise en analyse et ingénierie des données, avec une approche orientée métier et décision.</p>
+      <p>À travers trois expériences dans des secteurs différents — énergie, pharmaceutique et automobile — j'ai recueilli, analysé et restitué des données via Power BI et Tableau, mis en place des indicateurs de performance et collaboré avec les équipes métier pour garantir la qualité et la fiabilité des données.</p>
+      <div class="callout">Je recherche aujourd'hui un CDI en tant que Data Analyst, afin de mettre à profit ma double compétence technique et relationnelle pour transformer les données en informations utiles et contribuer concrètement à la prise de décision.</div>
+    </div>
+  </div>
 </section>
 
-  
-  <section id="cv">
-    <h2>CV</h2>
-    <a href="CV benredjem ouail.pdf" target="_blank">Télécharger mon CV</a>
-  </section>
+<section id="skills">
+  <div class="wrap reveal">
+    <div class="sec-head"><h2>Compétences</h2><span class="field">5 domaines</span></div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Data Analysis &amp; BI</h3>
+        <div class="badge-row">
+          <span class="badge">Power BI</span><span class="badge">DAX</span><span class="badge">Power Query</span>
+          <span class="badge">Tableau</span><span class="badge">Excel</span><span class="badge">KPI / Reporting</span>
+          <span class="badge">Data Visualization</span><span class="badge">Data Quality</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Data Engineering</h3>
+        <div class="badge-row">
+          <span class="badge">Python</span><span class="badge">PySpark</span><span class="badge">PyFlink</span>
+          <span class="badge">Apache Airflow</span><span class="badge">ETL / ELT</span><span class="badge">Data Pipelines</span>
+          <span class="badge">Docker</span><span class="badge">Git</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Bases de données</h3>
+        <div class="badge-row">
+          <span class="badge">SQL</span><span class="badge">PostgreSQL</span><span class="badge">SQL Server</span>
+          <span class="badge">MySQL</span><span class="badge">Snowflake</span><span class="badge">BigQuery</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Cloud / Data Platform</h3>
+        <div class="badge-row">
+          <span class="badge">Azure</span><span class="badge">Snowflake</span><span class="badge">BigQuery</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Python / Data</h3>
+        <div class="badge-row">
+          <span class="badge">Pandas</span><span class="badge">NumPy</span><span class="badge">Matplotlib</span>
+          <span class="badge">Seaborn</span><span class="badge">Plotly</span><span class="badge">Scikit-learn</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email : benredjemouail@gmail.com</p>
-    <p> <a href="https://www.linkedin.com/in/ouail-houdeifa-benredjem/" target="_blank">LinkedIn</a></p>
-    <p><a href=https://github.com/ouail-benredjem target="_blank">GitHub</a></p>
-  </section>
+<section id="experience">
+  <div class="wrap reveal">
+    <div class="sec-head"><h2>Expérience</h2><span class="field">order_by: date desc</span></div>
+    <div class="timeline">
+      <div class="tl-item">
+        <span class="tl-date">03/2026 — 09/2026</span>
+        <div class="tl-role">Data Analyst – Appui Performance</div>
+        <div class="tl-org">Enedis · Lyon, France</div>
+        <div class="tl-desc"><ul>
+          <li>Pilotage de la performance formation (Agence APOI) : modélisation en étoile et mesures DAX avancées.</li>
+          <li>Reportings Power BI, Excel et Power Apps pour le suivi des KPI de couverture, remplissage et clôture.</li>
+          <li>Automatisation des extractions de données et fiabilisation de la qualité des données (Data Quality).</li>
+          <li>Collaboration étroite avec les équipes métier (Gestion, Programmation, Performance).</li>
+        </ul></div>
+      </div>
+      <div class="tl-item">
+        <span class="tl-date">03/2023 — 05/2024</span>
+        <div class="tl-role">Data Analyst / Développeur BI</div>
+        <div class="tl-org">Saidal · Constantine, Algérie</div>
+        <div class="tl-desc"><ul>
+          <li>Automatisation des rapports qualité/ventes (Power BI, PostgreSQL), -70 % de temps de reporting.</li>
+          <li>Scripts Python de nettoyage de données et de détection d'anomalies qualité.</li>
+          <li>Sécurisation des déploiements via le RLS (Row-Level Security) dans Power BI.</li>
+        </ul></div>
+      </div>
+      <div class="tl-item">
+        <span class="tl-date">10/2022 — 03/2023</span>
+        <div class="tl-role">Chef de Projet Data – Stage</div>
+        <div class="tl-org">Sovac · Constantine, Algérie</div>
+        <div class="tl-desc"><ul>
+          <li>Collecte et vérification de la cohérence des données de production et de vente.</li>
+          <li>Préparation de fichiers source pour intégration dans Power BI, modes opératoires.</li>
+        </ul></div>
+      </div>
+      <div class="tl-item">
+        <span class="tl-date">07/2025 — 02/2026</span>
+        <div class="tl-role">Agent de Tri</div>
+        <div class="tl-org">UPS · CDI temps partiel · Lyon, France</div>
+        <div class="tl-desc">Activité en parallèle du Master 2, dans le respect des délais et des standards de qualité de service.</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    <p>© 2025 OUAIL – Portfolio</p>
-  </footer>
+<section id="projects">
+  <div class="wrap reveal">
+    <div class="sec-head"><h2>Projets réalisés</h2><span class="field">11 projets</span></div>
 
+    <!-- FEATURED: Enedis case study -->
+    <div class="proj-featured">
+      <span class="proj-tag">étude de cas — mission Enedis</span>
+      <h3>Pilotage de la performance formation — Agence APOI, Lyon</h3>
+      <p class="proj-ctx">Suite de tableaux de bord Power BI développée pour le pilotage complet de l'activité de formation : modélisation des données, gouvernance, suivi des KPI et contrôle qualité, destinée à être reprise par l'équipe Performance à Paris.</p>
+      <div class="badge-row" style="margin-bottom:18px;">
+        <span class="badge">Power BI</span><span class="badge">DAX</span><span class="badge">Modélisation en étoile</span><span class="badge">Power Query</span>
+      </div>
+      <div class="gallery">
+        <figure><img src="enedis1.png" alt="Modélisation en étoile"><figcaption>Modélisation en étoile</figcaption></figure>
+        <figure><img src="enedis2.png" alt="Pilotage de l'activité"><figcaption>Pilotage de l'activité</figcaption></figure>
+        <figure><img src="enedis3.png" alt="Remplissage des sessions"><figcaption>Remplissage des sessions</figcaption></figure>
+        <figure><img src="enedis4.png" alt="Glossaire APOI"><figcaption>Glossaire APOI</figcaption></figure>
+        <figure><img src="enedis5.png" alt="Matrice de pilotage"><figcaption>Matrice de pilotage</figcaption></figure>
+        <figure><img src="enedis6.png" alt="Taux de couverture par filière"><figcaption>Couverture par filière</figcaption></figure>
+        <figure><img src="enedis7.png" alt="Taux de couverture par action"><figcaption>Couverture par action</figcaption></figure>
+        <figure><img src="enedis8.png" alt="Clôture des sessions"><figcaption>Clôture des sessions</figcaption></figure>
+        <figure><img src="enedis9.png" alt="Taux de remplissage par action"><figcaption>Remplissage par action</figcaption></figure>
+        <figure><img src="enedis10.png" alt="Analyse des heures stagiaires"><figcaption>Heures stagiaires</figcaption></figure>
+        <figure><img src="enedis11.png" alt="Sessions annulées et reportées"><figcaption>Sessions annulées</figcaption></figure>
+        <figure><img src="enedis12.png" alt="Analyse croisée et contrôle de cohérence"><figcaption>Contrôle qualité</figcaption></figure>
+      </div>
+      <ul>
+        <li>Modèle relationnel en étoile (Catalogue, Sessions, Besoins, Calendrier) pour fiabiliser les calculs DAX.</li>
+        <li>Glossaire de gouvernance unifiant le langage fonctionnel entre management, programmation et gestion.</li>
+        <li>Suivi des KPI : taux de remplissage, de clôture, de couverture des besoins actuels et à venir.</li>
+        <li>Vue opérationnelle ligne par ligne remplaçant les anciens fichiers Excel de l'équipe Gestion.</li>
+        <li>Double vue plafonnée/déplafonnée pour arbitrer la sur- ou sous-programmation par action de formation.</li>
+        <li>Contrôle croisé de cohérence entre systèmes (MyHR / FSOS) pour fiabiliser les indicateurs.</li>
+      </ul>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="proj-card">
+        <span class="proj-tag field">pipeline data</span>
+        <h3>Pipeline météo &amp; qualité de l'air</h3>
+        <p class="proj-ctx">Récupération automatisée de données via deux APIs (météo, qualité de l'air), orchestrée toutes les 3h.</p>
+        <div class="proj-arch">APIs → Python → nettoyage → PostgreSQL → Airflow (DAG) → Power BI</div>
+        <div class="badge-row"><span class="badge">Python</span><span class="badge">Airflow</span><span class="badge">PostgreSQL</span><span class="badge">Power BI</span></div>
+        <ul>
+          <li>Extraction API et gestion sécurisée des clés, nettoyage et structuration des données.</li>
+          <li>Base PostgreSQL dédiée, insertion automatique via script Python.</li>
+          <li>DAG Airflow pour une exécution automatique toutes les 3 heures.</li>
+        </ul>
+        <div class="proj-footer"><a class="btn btn-ghost" href="visualisation.pbix" target="_blank">télécharger le .pbix ↓</a></div>
+      </div>
+
+      <div class="proj-card">
+        <span class="proj-tag field">data engineering</span>
+        <h3>Pipeline data Taxi &amp; météo</h3>
+        <p class="proj-ctx">Pipeline modulaire combinant traitement batch et temps réel pour l'analyse de données taxi et météo.</p>
+        <div class="proj-arch">Sources → Airflow → PySpark (batch) + PyFlink (temps réel) → transformation → analyse</div>
+        <div class="badge-row"><span class="badge">PySpark</span><span class="badge">PyFlink</span><span class="badge">Airflow</span><span class="badge">Python</span></div>
+        <ul>
+          <li>Traitement batch (PySpark) pour les volumes historiques.</li>
+          <li>Traitement temps réel (PyFlink) pour les flux continus.</li>
+          <li>Orchestration unifiée des deux flux via Airflow.</li>
+        </ul>
+        <div class="proj-footer"><a class="btn btn-ghost" disabled>lien à venir</a></div>
+      </div>
+
+      <div class="proj-card">
+        <span class="proj-tag field">data viz / python</span>
+        <h3>Dashboard analytique IMDB</h3>
+        <p class="proj-ctx">Analyse exploratoire et storytelling visuel sur un jeu de données de films.</p>
+        <div class="proj-arch">Data Cleaning → EDA → Data Visualization → Storytelling</div>
+        <div class="badge-row"><span class="badge">Pandas</span><span class="badge">Matplotlib</span><span class="badge">Seaborn</span><span class="badge">Plotly</span></div>
+        <ul>
+          <li>Nettoyage et préparation des données, analyse exploratoire (EDA).</li>
+          <li>Statistiques descriptives et identification de tendances.</li>
+          <li>Graphiques interactifs pour la restitution des résultats.</li>
+        </ul>
+        <div class="proj-footer"><a class="btn btn-ghost" disabled>lien à venir</a></div>
+      </div>
+
+      <div class="proj-card">
+        <span class="proj-tag field">etl / orchestration</span>
+        <h3>Pipeline ETL — Airflow + Docker</h3>
+        <p class="proj-ctx">Pipeline ETL conteneurisé pour un transfert reproductible du Data Lake vers le Data Warehouse.</p>
+        <div class="proj-arch">Extraction → Transformation → Chargement → Airflow → Docker</div>
+        <div class="badge-row"><span class="badge">Airflow</span><span class="badge">Docker</span><span class="badge">Python</span><span class="badge">ETL</span></div>
+        <ul>
+          <li>Conception du pipeline ETL et gestion des dépendances.</li>
+          <li>Orchestration des traitements avec Airflow.</li>
+          <li>Conteneurisation Docker pour une exécution reproductible.</li>
+        </ul>
+        <div class="proj-footer"><a class="btn btn-ghost" disabled>lien à venir</a></div>
+      </div>
+
+      <div class="proj-card">
+        <span class="proj-tag field">modélisation</span>
+        <h3>Modélisation SQL Server</h3>
+        <p class="proj-ctx">Conception d'une base de données relationnelle, du besoin métier jusqu'aux procédures stockées.</p>
+        <div class="proj-arch">Analyse du besoin → MCD → MLD → tables &amp; contraintes → procédures stockées</div>
+        <div class="badge-row"><span class="badge">SQL Server</span><span class="badge">SQL</span></div>
+        <ul>
+          <li>Modèle conceptuel et logique de données (MCD/MLD).</li>
+          <li>Création des tables, contraintes et relations.</li>
+          <li>Procédures stockées pour l'automatisation des traitements.</li>
+        </ul>
+        <div class="proj-footer"><a class="btn btn-ghost" disabled>lien à venir</a></div>
+      </div>
+
+      <div class="proj-card">
+        <span class="proj-tag field">cloud / data warehouse</span>
+        <h3>Intégration cloud — Snowflake &amp; BigQuery</h3>
+        <p class="proj-ctx">Stockage cloud et intégration automatisée de données dans une architecture Data Warehouse.</p>
+        <div class="proj-arch">Ingestion → Snowflake / BigQuery → transformation → intégration automatisée</div>
+        <div class="badge-row"><span class="badge">Snowflake</span><span class="badge">BigQuery</span><span class="badge">SQL</span></div>
+        <ul>
+          <li>Ingestion et stockage cloud des données.</li>
+          <li>Transformation et intégration automatisée entre les deux plateformes.</li>
+        </ul>
+        <div class="proj-footer"><a class="btn btn-ghost" disabled>lien à venir</a></div>
+      </div>
+
+      <div class="proj-card">
+        <img src="3%20(3).png" alt="Analyse du Diabète" />
+        <span class="proj-tag field">power bi</span>
+        <h3>Analyse du Diabète</h3>
+        <p class="proj-ctx">Vue d'ensemble interactive des facteurs liés au diabète à partir des données de 768 patients.</p>
+        <div class="badge-row"><span class="badge">Power BI</span></div>
+      </div>
+
+      <div class="proj-card">
+        <img src="5%20(5).png" alt="Analyse quantitative des ventes 2023-2024" />
+        <span class="proj-tag field">power bi</span>
+        <h3>Analyse quantitative des ventes 2023–2024</h3>
+        <p class="proj-ctx">Modèle en étoile (ventes, clients, produits, fournisseurs, calendrier) et suivi des performances par fournisseur, pays et mois.</p>
+        <div class="badge-row"><span class="badge">Power BI</span><span class="badge">Modélisation en étoile</span></div>
+      </div>
+
+      <div class="proj-card">
+        <img src="6%20(6).jpg" alt="Analyse visuelle des données Netflix" />
+        <span class="proj-tag field">power bi · english</span>
+        <h3>Analyse visuelle des données Netflix</h3>
+        <p class="proj-ctx">Tendances de la plateforme : langues, catégories d'âge, durée des contenus, répartition géographique.</p>
+        <div class="badge-row"><span class="badge">Power BI</span></div>
+      </div>
+
+      <div class="proj-card">
+        <img src="7%20(7).png" alt="Tableau de bord des ventes Tableau" />
+        <span class="proj-tag field">tableau</span>
+        <h3>Tableau de bord des ventes</h3>
+        <p class="proj-ctx">Analyse des performances par catégorie, segment, zone géographique et date.</p>
+        <div class="badge-row"><span class="badge">Tableau</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="certifications">
+  <div class="wrap reveal">
+    <div class="sec-head"><h2>Certifications</h2><span class="field">5 certifications</span></div>
+    <div class="certs-grid">
+      <div class="cert-card">
+        <div class="cert-title">Power BI Avancé</div>
+        <span class="cert-meta">LinkedIn Learning · avril 2025</span>
+        <p class="cert-desc">Manipulation, analyse et visualisation de données pour la création de rapports et de tableaux de bord.</p>
+        <a class="cert-link" href="Certificat%20Power%20BI%202.pdf" target="_blank">voir la certification ↓</a>
+      </div>
+      <div class="cert-card">
+        <div class="cert-title">Power BI</div>
+        <span class="cert-meta">LinkedIn Learning · janvier 2025</span>
+        <p class="cert-desc">Compétences avancées en analyse de données avec l'outil de visualisation Power BI.</p>
+        <a class="cert-link" href="Certificat%20Power%20BI.pdf" target="_blank">voir la certification ↓</a>
+      </div>
+      <div class="cert-card">
+        <div class="cert-title">Tableau</div>
+        <span class="cert-meta">LinkedIn Learning · décembre 2024</span>
+        <p class="cert-desc">Maîtrise de l'utilisation de Tableau pour créer des visualisations interactives.</p>
+        <a class="cert-link" href="Certificat%20Tableau.pdf" target="_blank">voir la certification ↓</a>
+      </div>
+      <div class="cert-card">
+        <div class="cert-title">Piloter l'informatique décisionnelle d'un SI</div>
+        <span class="cert-meta">Pro Alterna · décembre 2024</span>
+        <p class="cert-desc">Architecture BI et stratégie big data, modèles statistiques, référentiel de données, qualité des données, conformité RGPD.</p>
+        <a class="cert-link" href="Certificat(2).pdf" target="_blank">voir la certification ↓</a>
+      </div>
+      <div class="cert-card">
+        <div class="cert-title">Data Management</div>
+        <span class="cert-meta">Pro Alterna · novembre 2024</span>
+        <p class="cert-desc">Collecte des besoins, organisation des sources de données, création d'un entrepôt de données, sécurité et conformité RGPD.</p>
+        <a class="cert-link" href="Certificat.pdf" target="_blank">voir la certification ↓</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Discutons de votre prochain projet data.</h2>
+    <p>Basé à Lyon, disponible rapidement pour un poste de Data Analyst, Data Engineer ou BI en CDI.</p>
+    <div class="contact-links">
+      <a class="btn btn-primary" href="mailto:benredjemouail@gmail.com">benredjemouail@gmail.com</a>
+      <a class="btn btn-ghost" href="CV%20benredjem%20ouail.pdf" target="_blank">télécharger mon CV ↓</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/ouail-houdeifa-benredjem/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn btn-ghost" href="https://github.com/ouail-benredjem" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+    <div class="foot-meta">
+      <span>Lyon, France</span>
+      <span>© 2026 Ouail Houdeifa Benredjem</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var t = document.getElementById('navToggle');
+  var l = document.getElementById('navLinks');
+  if (t) { t.addEventListener('click', function () { l.classList.toggle('open'); }); }
+
+  var items = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: .12 });
+    items.forEach(function (el) { io.observe(el); });
+  } else {
+    items.forEach(function (el) { el.classList.add('in'); });
+  }
+</script>
 </body>
-</html> 
+</html>
