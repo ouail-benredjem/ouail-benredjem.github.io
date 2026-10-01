@@ -174,8 +174,8 @@ section{ padding:64px 0; }
 .cert-desc{ font-size:.88rem; margin-bottom:10px; }
 .cert-link{ font-family:'IBM Plex Mono',monospace; font-size:.78rem; color:var(--navy); text-decoration:none; border-bottom:1px solid var(--navy); }
 
-/* Footer */
-footer{ background:var(--navy); color:#fff; padding:64px 0 36px; }
+/* Footer — fixed dark navy regardless of light/dark mode, for guaranteed contrast */
+footer{ background:#16294A; color:#fff; padding:64px 0 36px; }
 footer h2{ color:#fff; font-size:1.7rem; margin-bottom:14px; max-width:22ch; }
 footer p{ color:#C9D3E4; max-width:52ch; margin-bottom:26px; }
 .contact-links{ display:flex; flex-wrap:wrap; gap:12px; margin-bottom:38px; }
