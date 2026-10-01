@@ -132,7 +132,8 @@ section{ padding:64px 0; }
 }
 .gallery{ display:grid; grid-template-columns:repeat(auto-fill, minmax(140px,1fr)); gap:10px; margin-bottom:18px; }
 .gallery figure{ margin:0; }
-.gallery img{ border-radius:var(--radius-sm); border:1px solid var(--line); aspect-ratio:16/10; object-fit:cover; }
+.gallery img{ border-radius:var(--radius-sm); border:1px solid var(--line); aspect-ratio:16/10; object-fit:cover; cursor:zoom-in; transition:transform .15s; }
+.gallery img:hover{ transform:scale(1.03); }
 .gallery figcaption{ font-size:.7rem; color:var(--muted); margin-top:4px; }
 .proj-featured ul{ padding-left:18px; font-size:.95rem; columns:2; column-gap:28px; }
 .proj-featured ul li{ margin-bottom:6px; break-inside:avoid; }
@@ -143,7 +144,21 @@ section{ padding:64px 0; }
   box-shadow:var(--shadow); padding:22px; display:flex; flex-direction:column; transition:transform .18s, box-shadow .18s;
 }
 .proj-card:hover{ transform:translateY(-4px); box-shadow:var(--shadow-hover); }
-.proj-card img{ border-radius:var(--radius-sm); border:1px solid var(--line); margin-bottom:14px; aspect-ratio:16/10; object-fit:cover; }
+.proj-card img{ border-radius:var(--radius-sm); border:1px solid var(--line); margin-bottom:14px; aspect-ratio:16/10; object-fit:cover; cursor:zoom-in; transition:transform .15s; }
+.proj-card img:hover{ transform:scale(1.02); }
+
+/* Lightbox */
+.lightbox{
+  position:fixed; inset:0; background:rgba(8,10,14,.93); display:none;
+  align-items:center; justify-content:center; z-index:100; padding:48px; cursor:zoom-out;
+}
+.lightbox.open{ display:flex; }
+.lightbox img{ max-width:92vw; max-height:88vh; width:auto; border-radius:var(--radius-sm); box-shadow:0 24px 64px rgba(0,0,0,.5); cursor:default; }
+.lightbox-close{
+  position:absolute; top:20px; right:24px; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.3);
+  color:#fff; font-size:1.05rem; width:40px; height:40px; border-radius:50%; cursor:pointer; transition:.15s;
+}
+.lightbox-close:hover{ border-color:#fff; background:rgba(255,255,255,.16); }
 .proj-card h3{ font-size:1.02rem; margin-bottom:6px; }
 .proj-ctx{ font-size:.86rem; color:var(--muted); margin-bottom:10px; }
 .proj-card ul{ font-size:.88rem; padding-left:18px; margin-bottom:14px; }
