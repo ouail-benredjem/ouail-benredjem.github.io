@@ -369,6 +369,11 @@
   </div>
 </footer>
 
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Fermer">✕</button>
+  <img src="" alt="" id="lightboxImg">
+</div>
+
 <script>
   var t = document.getElementById('navToggle');
   var l = document.getElementById('navLinks');
@@ -383,6 +388,28 @@
   } else {
     items.forEach(function (el) { el.classList.add('in'); });
   }
+
+  /* Lightbox: clic sur une image de projet pour l'agrandir */
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lightboxImg');
+  var lbClose = document.getElementById('lightboxClose');
+
+  function openLightbox(src, alt) {
+    lbImg.src = src; lbImg.alt = alt || '';
+    lb.classList.add('open'); lb.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    lb.classList.remove('open'); lb.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    lbImg.src = '';
+  }
+  document.querySelectorAll('.gallery img, .proj-card img').forEach(function (img) {
+    img.addEventListener('click', function () { openLightbox(img.src, img.alt); });
+  });
+  lb.addEventListener('click', function (e) { if (e.target === lb) closeLightbox(); });
+  lbClose.addEventListener('click', closeLightbox);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLightbox(); });
 </script>
 </body>
 </html>
